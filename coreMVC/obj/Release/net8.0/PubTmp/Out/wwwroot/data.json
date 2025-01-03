@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Tiger Nixon",
+        "position": "System Architect",
+        "office": "Edinburgh",
+        "age": 61,
+        "start_date": "2011/04/25",
+        "salary": "$320,800"
+    },
+    {
+        "name": "Garrett Winters",
+        "position": "Accountant",
+        "office": "Tokyo",
+        "age": 63,
+        "start_date": "2011/07/25",
+        "salary": "$170,750"
+    }
+]

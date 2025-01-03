@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\CoreMVCdeploy</_PublishTargetUrl>
+    <History>True|2024-05-17T05:56:47.8755720Z;True|2024-05-17T10:47:45.3905859+08:00;True|2024-05-17T10:30:12.0728756+08:00;True|2024-05-17T09:16:53.8792464+08:00;True|2024-05-17T09:06:31.9884384+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

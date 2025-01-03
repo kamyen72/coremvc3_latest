@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script>
+        var myMessage = '{"success": true,"counters": [{"counter_name": "1", "counter_type": "sds", "counter_unit": "sds" }, { "counter_name": "2", "counter_type": "dfd", "counter_unit": "ds" }, { "counter_name": "9", "counter_type": "sds", "counter_unit": " dd " }, { "counter_name": "10", "counter_type": "number ", "counter_unit": "litri " }, { "counter_name": "3", "counter_type": "number ", "counter_unit": "litri " }, { "counter_name": "4", "counter_type": "dfg", "counter_unit": "gfgd" }, { "counter_name": "5", "counter_type": "fgf", "counter_unit": "liggtggggri " }, { "counter_name": "6", "counter_type": "dfg", "counter_unit": "kwfgf " }, { "counter_name": "7", "counter_type": "dfg", "counter_unit": "dg" }, { "counter_name": "8", "counter_type": "dfg", "counter_unit": "dfg" } ] }';
+
+        var jsonData = JSON.parse(myMessage);
+        for (var i = 0; i < jsonData.counters.length; i++) {
+            var counter = jsonData.counters[i];
+            alert(counter.counter_name);
+        }
+    </script>
+</head>    
+<body>
+    
+</body>
+</html>

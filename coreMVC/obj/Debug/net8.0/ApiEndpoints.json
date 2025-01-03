@@ -1,0 +1,98 @@
+[
+  {
+    "ContainingType": "CoreMVC2.Controllers.APIController",
+    "Method": "AjaxMethod",
+    "RelativePath": "API/AjaxMethod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreMVC2.Controllers.APIController\u002BInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoreMVC2.Controllers.APIController",
+    "Method": "GetAccountPrefixs",
+    "RelativePath": "API/GetAccountPrefixs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreMVC2.Models.PrefixInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoreMVC2.Controllers.APIController",
+    "Method": "GetAccounts",
+    "RelativePath": "API/GetAccounts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreMVC2.Models.AccountsInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoreMVC2.Controllers.APIController",
+    "Method": "GetBetTypes",
+    "RelativePath": "API/GetBetTypes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreMVC2.Models.PrefixInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoreMVC2.Controllers.APIController",
+    "Method": "GetCurrentPeriodPrefixs",
+    "RelativePath": "API/GetCurrentPeriodPrefixs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreMVC2.Models.PrefixInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CoreMVC2.Controllers.APIController",
+    "Method": "GetCurrentPeriods",
+    "RelativePath": "API/GetCurrentPeriods",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreMVC2.Models.CurPeriodInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

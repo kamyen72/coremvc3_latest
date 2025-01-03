@@ -1,0 +1,409 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    @* <meta name="viewport" content="width=device-width" /> *@
+    <title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#dp1").datepicker({
+                dateFormat: 'yy-mm-dd',//check change
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+
+        $(function () {
+            $("#datepicker2").datepicker({
+                dateFormat: 'yy-mm-dd',//check change
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+
+    
+</head>
+<style>
+    .hide {
+        display: none;
+    }
+
+    .show {display:block;}
+
+    body {background: yellow;}
+</style>
+<body style="background: yellow;">
+    <p style="font-size:26px;font-weight:bolder;padding-left:15px;background:#56b0f4;text-align:center;">Result Modification Page</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style="text-align:center; font-size: 50px; font-weight: bolder;">
+                <a href="~/testprefix.html"><span style=" color: red;">Test Prefix</span></a><br />
+                <a href="~/testaccount.html"><span style=" color: red;">Test Accounts</span></a><br />
+                <a href="~/testBetType.html"><span style=" color: red;">Test Bet Types</span></a><br />
+
+                <a href="~/testaccount.html"><span style=" color: blue; font-weight:bolder;">Test Report</span></a><br />
+
+                <a href="~/testoverallbybettype.html"><span style=" color: blue; font-weight:bolder;">Test Overall by Bet Type</span></a><br />
+
+                <a href="~/TestOverallByUserName.html"><span style=" color: blue; font-weight:bolder;">Test Overall By User Name</span></a><br />
+
+                
+            </div>
+        </<div>
+        @* <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2" style="font-size:16px;">
+                <p>Start Date</p>
+                <p><input type="text" id="dp1" size="10" ></p>
+                <p>Finish Date</p>
+                <p><input type="text" id="datepicker2" size="10"></p>
+                <p>4D Lottery Type</p>
+                <select id="LotteryTypes">
+                    <option value="-1"></option>
+                </select>
+                <p>~ Or ~ Other Lottery Type</p>
+                <select id="OtherLotteryTypes">
+                    <option value="-1"></option>
+                </select>
+                
+                <div id="modiArea" class="hide">
+                    <br />
+                    <p style="font-weight:bolder;color:blue;">Result Detail for Modification</p>
+                </div>
+
+                <div id="history">
+                    <input type="text" value="" id="oldvalue" style="display:none;" />
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10" style="border-style:solid;border-color:blue;border-width:1px;">
+                <p style="font-weight:bolder;text-align: left;font-size:18px;">Results Found</p>
+                <div id="LotteryResults" style="width:max-content;"></div>
+                <br />
+                
+            </div>
+        </div> *@
+    </div>
+    
+    <script type="text/javascript">
+        function testme() {
+            // alert("start");
+            var date1 = $("#dp1").val();
+            var date2 = $("#datepicker2").val();
+
+            if (date1 == "" || date2 == "") {
+                alert("Start or End Date is empty");
+            }
+            else {
+                alert("all dates ok");
+            }
+        }
+
+        function getNon4ds() {
+            // alert("am finding non 4d types");
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetLotteryTypes",
+                data: { "startDate": $("#dp1").val(), "endDate": $("#datepicker2").val(), "LType": "4D", "ToReverse": true },
+                success: function (response) {
+                    var jsonData = JSON.parse(response);
+                    // alert(jsonData.length);
+                    $("#OtherLotteryTypes").empty();
+                    var z = document.getElementById("OtherLotteryTypes");
+                    var option0 = document.createElement("option");
+                    option0.text = "";
+                    option0.value = -1;
+                    z.add(option0);
+
+                    for (var i = 0; i < jsonData.length; i++) {
+                        var counter = jsonData[i];
+                        var x = document.getElementById("OtherLotteryTypes");
+                        var option = document.createElement("option");
+                        option.text = counter.LotteryTypeName + "[" + counter.LotterytypID + "]" + " (" + counter.Recs.toString() + ")";
+                        option.value = counter.LotteryTypeID
+                        x.add(option);
+                    }
+
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        }
+
+        function get4dtypes() {
+            // alert("am finding 4d types");
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetLotteryTypes",
+                data: { "startDate": $("#dp1").val(), "endDate": $("#datepicker2").val(), "LType": "4D", "ToReverse": false },
+                success: function (response) {
+                    var jsonData = JSON.parse(response);
+                    // alert(jsonData.length);
+                    $("#LotteryTypes").empty();
+                    var z = document.getElementById("LotteryTypes");
+                    var option0 = document.createElement("option");
+                    option0.text = "";
+                    option0.value = -1;
+                    z.add(option0);
+
+                    for (var i = 0; i < jsonData.length; i++) {
+                        var counter = jsonData[i];
+                        var x = document.getElementById("LotteryTypes");
+                        var option = document.createElement("option");
+                        option.text = counter.LotteryTypeName + " (" + counter.Recs.toString() + ")";
+                        option.value = counter.LotteryTypeID
+                        x.add(option);
+                    }
+
+                    // alert(z.childElementCount);
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        }
+
+        function CheckLotteryTypeSelection() {
+            var type1 = $("#LotteryTypes").find(":selected").val();
+            var type2 = $("#OtherLotteryTypes").find(":selected").val();
+
+            if (type1 > 0 && type2 > 0) {
+                alert("Cannot select both lottery types.");
+            }
+
+            else if (type1 == 0 && type2 == 0) {
+                alert("Please select either lottery type.");
+            }
+
+            else {
+                getResults();
+            }
+        }
+
+        function ModifyResult(mybutt) {
+            let myresult = mybutt.getAttribute("data-id");
+            var txt = "The record id: " + myresult;
+
+            var txtbox = "#txt" + myresult;
+            $(txtbox).attr("disabled", false);
+            $(txtbox).attr("style", "background:#99FFFF");
+
+            var oldvalue = $(txtbox).val();
+            
+            $(txtbox).focusout(function () {
+                $(txtbox).attr("disabled", true);
+                $(txtbox).attr("style", "background:#F8F8F8;border-width:0.5px;");
+            });
+
+            var butt = "#butt" + myresult;
+            $(butt).attr("style", "display:block;");
+
+            var buttedt = "#edt" + myresult;
+            $(buttedt).attr("style", "display:none;");
+
+            var buttchk = "#buttchk" + myresult;
+            $(buttchk).attr("style", "display:none;");
+
+            $("#oldvalue").val(oldvalue);
+        }
+
+        function Update(mybutt) {
+            let myresult = mybutt.getAttribute("data-id");
+
+            var txtbox = "#txt" + myresult;
+
+            var butt = "#butt" + myresult;
+            $(butt).attr("style", "display:none;"); // update button
+
+            var buttedt = "#edt" + myresult;
+            $(buttedt).attr("style", "display:block;");
+
+            var oldvalue = $("#oldvalue").val();
+            $(txtbox).attr("disabled", true);
+
+            var newvalue = $(txtbox).val();
+
+            UpdateAjax(myresult, $(txtbox).val(), oldvalue);
+        }
+
+        function UpdateAjax(id, newvalue, oldvalue) {
+            // alert(id);
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/UpdateResult",
+                data: { "Lottery31ID": id, "NewValue": newvalue, "OldValue": oldvalue },
+                success: function (response) {
+                    alert("Lottery Result Value Updated Successfully.");
+                    CheckLotteryTypeSelection();
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        }
+
+        function IsModified(mybutt) {
+            let myresult = mybutt.getAttribute("data-id");
+            // alert("Am checking modification status for: " + myresult);
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/IsModified",
+                data: { "Lottery31ID": myresult },
+                success: function (response) {
+                    // alert("am ok");
+                    alert("Lottery Is Modified Before? " + response);
+                },
+                failure: function (response) {
+                    alert("I failed");
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert("I got errors");
+                    alert(response.responseText);
+                }
+            });
+        }
+
+        function getResults() {
+            $("#modiArea").attr("class", "hide");
+            var LotteryTypeID = 0;
+            var type1 = $("#LotteryTypes").find(":selected").val();
+            var type2 = $("#OtherLotteryTypes").find(":selected").val();
+
+            if (type1 > 0 && type2 > 0) {
+                //alert("Cannot select both lottery types.");
+            }
+            else if (type1 == 0 && type2 == 0) {
+                //alert("Please select either lottery type.");
+            }
+            else {
+                if (type1 > 0) {
+                    LotteryTypeID = type1;
+                }
+                if (type2 > 0) {
+                    LotteryTypeID = type2;
+                }
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetOLotteryResults",
+                data: { "startDate": $("#dp1").val(), "endDate": $("#datepicker2").val(), "LotteryTypeID": LotteryTypeID },
+                success: function (response) {
+                    var jsonData = JSON.parse(response);
+                    var txt = "<table border='1' cellspacing='1px' cellpadding='3px' style='border-color:blue;' width='1200px'>";
+
+                    txt = txt + "<tr>";
+                    txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'>Row#</td>";
+                    txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'>Current Period</td>";
+                    txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'>Result</td>";
+                    txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'>Close Date</td>";
+                    txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'>Times Changed</td>";
+                    //txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'>ID</td>";
+                    txt = txt + "<td style='font-weight:bold;text-align:left;padding:2px 2px 2px 2px;'></td>";
+                    txt = txt + "</tr>";
+
+                    for (var i = 0; i < jsonData.length; i++) {
+                        var record = jsonData[i];
+
+                        txt = txt + "<tr>";
+                        txt = txt + "<td style='font-weight:normal;text-align:left;padding:2px 2px 2px 2px;'>" + (i + 1).toString() + "</td>";
+                        txt = txt + "<td style='font-weight:normal;text-align:left;padding:2px 2px 2px 2px;'>" + record.CurrentPeriod + "</td>";
+                        txt = txt + "<td style='font-weight:normal;text-align:left;padding:2px 2px 2px 2px;'><input type='text' id='txt" + record.OLottery31ID + "' value='" + record.Result + "' disabled></td>";
+                        txt = txt + "<td style='font-weight:normal;text-align:left;padding:2px 2px 2px 2px;'>" + record.CloseDate + "</td>";
+                        var mycolor = "#ffffff";
+                        var enablestatus = "";
+                        var times = parseInt( record.TimesChanged );
+                        if (times != 0) {
+                            mycolor = "#ff9999";
+                            enablestatus = "disabled";
+                        }
+
+                        txt = txt + "<td style='font-weight:normal;text-align:left;padding:2px 2px 2px 2px;background:" + mycolor + "'><span> " + record.TimesChanged + " </span></td > ";
+                        //txt = txt + "<td style='font-weight:normal;text-align:left;padding:2px 2px 2px 2px;'>" + record.OLottery31ID + "</td>";
+                        txt = txt + "<td style='font-weight:normal;content-align:left;text-align:left;padding:2px 2px 2px 2px;width:450px;'>";
+                        // txt = txt = "<table border='1' width='100%'><tr><td>";
+                        txt = txt + "<input type='button' value='Edit' id='edt" + record.OLottery31ID + "' data-id='" + record.OLottery31ID + "' onclick='ModifyResult(this)' " + enablestatus + ">" + "<input type='button' value='Save' id='butt" + record.OLottery31ID + "' data-id='" + record.OLottery31ID + "' onclick = 'Update(this)' style = 'display:none;' > "; 
+                        txt = txt + "<input type='button' value='Check' id='buttchk" + record.OLottery31ID + "' data-id='" + record.OLottery31ID + "' onclick = 'IsModified(this)' style = 'display:none;' > ";
+                        // txt = txt = "</td></tr></table>";
+                        txt = txt + "</td>";
+                        txt = txt + "</tr>";
+                    }
+                    txt = txt + "</table>";
+
+                    $("#LotteryResults").html(txt);
+                    // highlightChanged();
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        }
+
+        $("#Save").click(function () {
+            CheckLotteryTypeSelection();
+        });
+
+        $("#dp1").change(function () {
+            var date1 = $("#dp1").val();
+            var date2 = $("#datepicker2").val();
+            if (date1 != "" && date2 != "") {
+                get4dtypes();
+                getNon4ds();
+            }
+            // else {
+            //     alert("dates not complete");
+            // }
+        });
+
+        $("#datepicker2").change(function () {
+            var date1 = $("#dp1").val();
+            var date2 = $("#datepicker2").val();
+            if (date1 != "" && date2 != "") {
+                get4dtypes();
+                getNon4ds();
+            }
+            // else {
+            //     alert("dates not complete");
+            // }
+        });
+
+        $("#LotteryTypes").change(function () {
+            CheckLotteryTypeSelection();
+        });
+
+        $("#OtherLotteryTypes").change(function () {
+            CheckLotteryTypeSelection();
+        });
+
+    </script>
+    </div>
+</body>
+</html>

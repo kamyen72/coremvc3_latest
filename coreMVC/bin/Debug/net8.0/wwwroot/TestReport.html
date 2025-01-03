@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To test ajax function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        .scrollable {
+            background-color: lightpink;
+            width: auto;
+            height: 500px;
+            overflow: scroll;
+            padding-left: 5px;
+        }
+
+        .scrollable2 {
+            background-color: lightgreen;
+            width: auto;
+            /*max-width:500px;*/
+            height: 500px;
+            overflow: scroll;
+            padding-left: 0px;
+        }
+
+        .pad50 {
+            padding-left: 50px;
+        }
+
+        .padright100 {
+            padding-right: 160px;
+        }
+
+        .roundBorder {
+            border-style: solid;
+            border-width: 5px;
+            border-color: grey;
+            border-radius: 15px;
+        }
+
+        .fa_custom {
+            color: #0099CC
+        }
+
+        .cellborder {
+            font-weight:bolder; font-size: 12px; border-style: solid; border-width: 1px; border-color: blue; background: #666666; color:#ffffff; padding-left: 3px; padding-right: 3px;
+        }
+
+        .celldata {
+            font-size: 12px;
+            font-weight: normal;
+            color: black;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            background: #ffffff;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .cellcenter {
+            text-align: center; 
+        }
+
+        .cellright {
+            text-align: right;
+        }
+
+        .bckPink {
+            background: #f863ba;
+            border-style: none;
+            min-width:150px;
+        }
+
+        .bckPeal {
+            background: #99ffff;
+            border-style: none;
+            min-width: 150px;
+        }
+
+        .Report2 {
+            background: #ffffff;
+            border-style: solid;
+            border-width: 4px;
+            border-radius: 5px;
+            border-color: darkgreen;
+            min-width: 850px;
+        }
+
+        #pop2 {
+            background: #ffffff;
+            border-style: solid;
+            border-width: 4px;
+            border-radius: 5px;
+            border-color: dimgrey;
+            min-width: 1250px;
+            z-index: 9999;
+            text-align: center;
+            position: absolute;
+            left: 340px;
+            top: 226px;
+            min-height: 600px;
+            overflow: scroll;
+            display: none;
+        }
+    </style>
+</head>
+<body style="background: lightblue;">
+    <script>
+        $(document).ready(function () {
+            //alert("am ready");
+            $("#dtDateS").val('2024-05-01');
+            $("#dtDateE").val('2024-05-31');
+        });
+    </script>
+
+    <script>
+        function Go() {
+            console.log("Preparing report now");
+            var StartDate = $("#dtDateS").val();
+            var EndDate = $("#dtDateE").val();
+            var SelectedUserName = $("#txtUserName").val();
+            console.log(JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate, "UserName": SelectedUserName }));
+            document.getElementById("pop01").style = "display:block; padding-left: 310px;";
+            document.getElementById("div_result").style = "display:block; padding-left: 50px; padding-right: 5px; width: 400px;";
+            document.getElementById("curPeriods").style = "display:block; padding-left: 5px; padding-right: 5px; width: 900px;";
+            document.getElementById("closebutt").style = "display:block; padding-left: 5px; padding-right: 5px; width: 100px;";
+
+            document.getElementById("div_result").className = "col-sm-3 col-md-3 scrollable";
+            document.getElementById("curPeriods").className = "col-sm-8 col-md-8 scrollable";
+            document.getElementById("closebutt").className = "col-sm-1 col-md-1";
+
+            document.getElementById("curPeriods").innerHTML = "";
+            document.getElementById("div_result").innerHTML = "";
+
+            $.ajax({
+                type: "POST",
+                url: "/API/GetReportByUserName",
+                data: JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate, UserName: SelectedUserName }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    var rownum = response.length;
+                    console.log("Total Rows in Report: " + rownum);
+                    txt = "<table border=1>";
+                    txt = txt + "<tr >";
+                    txt = txt + "<td class='cellborder'>Account</td>";
+                    txt = txt + "<td class='cellborder'>UpdateDate</td>";
+                    txt = txt + "<td class='cellborder'>Bet Type</td>";
+                    txt = txt + "<td class='cellborder'>Ticket No</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >Detail Rows</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >Turn Over</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >Bet Amount</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >Win Money</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >TT WL All Lost</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >TT WL All 4D Wins</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >TT WL All Non 4D Wins</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >Total Win Loss</td>";
+                    txt = txt + "</tr>";
+
+                    //console.log(txt);
+
+                    var Total_Recs = 0;
+                    var Total_TOver = 0;
+                    var Total_BetAmount = 0;
+                    var Total_WinMoney = 0;
+                    var Total_Sum_winlose_AllLOST = 0;
+                    var Total_Sum_winlose_AllWIN_4d = 0;
+                    var Total_Sum_winlose_AllWIN_NOT4d = 0;
+                    var Total_Win_Lose = 0;
+
+
+                    for (i = 0; i < rownum; i++) {
+                        txt = txt + "<tr>";
+                        txt = txt + "<td class='celldata'>" + response[i].UserName + "</td>";
+                        txt = txt + "<td class='celldata'>" + response[i].UpdateDate + "</td>";
+                        txt = txt + "<td class='celldata'>" + response[i].BET_TYPE + "</td>";
+                        txt = txt + "<td class='celldata'><button class='bckPeal' onclick='DrillTicket(this)' data-ticket='" + response[i].Bill_No_Ticket + "' data-user='" + response[i].UserName + "' >" + response[i].Bill_No_Ticket + "</button></td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].Recs.toString()).toFixed(0) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].TOver.toString()).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].BetAmount.toString()).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].WinMoney.toString()).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].Sum_winlose_AllLOST.toString()).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].Sum_winlose_AllWIN_4d.toString()).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].Sum_winlose_AllWIN_NOT4d.toString()).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellcenter' >" + Number(response[i].Win_Lose.toString()).toFixed(4) + "</td>";
+                        txt = txt + "</tr>";
+
+                        Total_Recs = Total_Recs + Number(response[i].Recs.toString());
+                        Total_TOver = Total_TOver + Number(response[i].TOver.toString());
+                        Total_BetAmount = Total_BetAmount + Number(response[i].BetAmount.toString());
+                        Total_WinMoney = Total_WinMoney + Number(response[i].WinMoney.toString());
+                        Total_Sum_winlose_AllLOST = Total_Sum_winlose_AllLOST + Number(response[i].Sum_winlose_AllLOST.toString());
+                        Total_Sum_winlose_AllWIN_4d = Total_Sum_winlose_AllWIN_4d + Number(response[i].Sum_winlose_AllWIN_4d.toString());
+                        Total_Sum_winlose_AllWIN_NOT4d = Total_Sum_winlose_AllWIN_NOT4d + Number(response[i].Sum_winlose_AllWIN_NOT4d.toString());
+                        Total_Win_Lose = Total_Win_Lose + Number(response[i].Win_Lose.toString());
+                    }
+
+                    txt = txt + "<tr >";
+                    txt = txt + "<td class='cellborder'></td>";
+                    txt = txt + "<td class='cellborder'></td>";
+                    txt = txt + "<td class='cellborder'></td>";
+                    txt = txt + "<td class='cellborder'></td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_Recs.toFixed(0) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_TOver.toFixed(4) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_BetAmount.toFixed(4) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_WinMoney.toFixed(4) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_Sum_winlose_AllLOST.toFixed(4) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_Sum_winlose_AllWIN_4d.toFixed(4) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_Sum_winlose_AllWIN_NOT4d.toFixed(4) + "</td>";
+                    txt = txt + "<td class='cellborder cellcenter' >" + Total_Win_Lose.toFixed(4) + "</td>";
+                    txt = txt + "</tr>";
+
+
+                    txt = txt + "</table><br>";
+                    txt = txt + "<div style='text-align: center; float: right; padding-right:24px;'><button onclick='GenExcel()'><img src='http://localhost:8066/excel.jpg' style='width:25px;height:25px;' /></button>";
+                    txt = txt + "<a id='downloadlink' href='' target='_blank' style='display:none;''>Click to Download</a>";
+                    txt = txt + "</div>";
+
+                    document.getElementById("Report").innerHTML = txt;
+                    document.getElementById("Report").style = "display: block; padding-left: 340px; padding-top:20px; ";
+                    console.log(document.getElementById("Report").style);
+
+                    //console.log(document.getElementById("Report").innerHTML);
+
+                    //string oldstr = JSON.stringify(response);
+                    //console.log(oldstr);
+                    //string newjstring = oldstr.replaceAll("""", "'");
+                    //console.log(newjstring);
+
+                    document.getElementById("ReportJSON").innerText = JSON.stringify(response);;
+                    document.getElementById("ReportJSON").style = "display: none";
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+
+            console.log("done");
+            document.getElementById("pop01").style = "display:none; padding-left: 310px;";
+        }
+    </script>
+
+    <script>
+        function closePop() {
+            document.getElementById("div_result").style.display = "none";
+            document.getElementById("pop01").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function closePop2() {
+            console.log(document.getElementById("closebutton2").style.left);
+            document.getElementById("pop2").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function TakeMe(me) {
+            alert($(me).attr("data-val"));
+        }
+    </script>
+
+    <script>
+        function TakeMe4(me) {
+            alert($(me).attr("data-val"));
+        }
+    </script>
+
+    <script>
+        function GenExcel() {
+            console.log("Testing Excel");
+
+            // var jstring = "[{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 8 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO SINGAPOREPOOL 4D","Bill_No_Ticket":"SGP4D_0393","Recs":8,"TOver":1347,"BetAmount":515.38,"WinMoney":0,"Sum_winlose_AllLOST":-515.38,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-515.38},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 14 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO HONGKONG GRAND","Bill_No_Ticket":"HKGR_0923","Recs":31,"TOver":38000,"BetAmount":38000,"WinMoney":190000,"Sum_winlose_AllLOST":-36000,"Sum_winlose_AllWIN_4d":188000,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":152000},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 14 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO KING4D","Bill_No_Ticket":"KING_0923","Recs":31,"TOver":34636,"BetAmount":34636,"WinMoney":95000,"Sum_winlose_AllLOST":-33636,"Sum_winlose_AllWIN_4d":94000,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":60364},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 14 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO SHANGHAI HERO","Bill_No_Ticket":"SHGH_0923","Recs":120,"TOver":72000,"BetAmount":72000,"WinMoney":0,"Sum_winlose_AllLOST":-72000,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-72000},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 15 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO HONGKONG GRAND","Bill_No_Ticket":"HKGR_0924","Recs":86,"TOver":33300,"BetAmount":33300,"WinMoney":0,"Sum_winlose_AllLOST":-33300,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-33300},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 15 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO MALAYSIA TOTO","Bill_No_Ticket":"MMTO_0432","Recs":60,"TOver":18000,"BetAmount":18000,"WinMoney":0,"Sum_winlose_AllLOST":-18000,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-18000},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 19 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO HONGKONG GRAND","Bill_No_Ticket":"HKGR_0928","Recs":1,"TOver":190,"BetAmount":190,"WinMoney":0,"Sum_winlose_AllLOST":-190,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-190},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 24 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO HONGKONG GRAND","Bill_No_Ticket":"HKGR_0933","Recs":60,"TOver":6000,"BetAmount":6000,"WinMoney":0,"Sum_winlose_AllLOST":-6000,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-6000},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 25 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO SHANGHAI HERO","Bill_No_Ticket":"SHGH_0934","Recs":31,"TOver":3100,"BetAmount":3100,"WinMoney":0,"Sum_winlose_AllLOST":-3100,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-3100},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 26 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO AMAZON","Bill_No_Ticket":"AMAZ_0935","Recs":3,"TOver":1801,"BetAmount":1801,"WinMoney":0,"Sum_winlose_AllLOST":-1801,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-1801},{"UserName":"HL_B77ACAA07KD","UpdateDate":"5 / 26 / 2024 12:00:00 AM","BET_TYPE":"4D LOTTO HONGKONG GRAND","Bill_No_Ticket":"HKGR_0935","Recs":34,"TOver":18650,"BetAmount":18650,"WinMoney":0,"Sum_winlose_AllLOST":-18650,"Sum_winlose_AllWIN_4d":0,"Sum_winlose_AllWIN_NOT4d":0,"Win_Lose":-18650}]";
+
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                url: "/API/TestExcel",
+                data: JSON.stringify({ "InputText": document.getElementById("ReportJSON").innerText }),
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    console.log(response[0].FileName);
+
+                    var converted = JSON.parse(response);
+
+                    document.getElementById("downloadlink").style = "display: none";
+                    document.getElementById("downloadlink").href = "/" + converted[0].FolderName + "/" + converted[0].FileName;
+                    document.getElementById("downloadlink").style = "float:right; display: block; font-size: 22px; font-weight: bolder; color: blue;";
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function GenExcel2() {
+            console.log("Testing Excel");
+
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                url: "/API/GetBetDetails",
+                data: JSON.stringify({ "UserName": document.getElementById("txtUserName").value, "CurrentPeriod": document.getElementById("txtCurrentPeriod").value }),
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    console.log(response[0].FileName);
+
+                    var converted = JSON.parse(response);
+
+                    document.getElementById("downloadlink2").style = "display: none";
+                    document.getElementById("downloadlink2").href = "/" + converted[0].FolderName + "/" + converted[0].FileName;
+                    document.getElementById("downloadlink2").style = "float:right; display: block; font-size: 22px; font-weight: bolder; color: blue;";
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function ShowJSON() {
+            document.getElementById("ReportJSON").style = "display: block; padding-left: 310px;";
+        }
+    </script>
+
+    <script>
+        function DrillTicket(me) {
+            console.log("Drill ticket ...");
+            var myticket = me.getAttribute("data-ticket");
+            var myuser = me.getAttribute("data-user");
+            console.log(myticket + "\n" + myuser);
+
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                url: "/API/GetBetDetails",
+                data: JSON.stringify({ "UserName": myuser, "CurrentPeriod": myticket }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    var mylist = JSON.parse(response);
+
+                    var rownum = mylist.length;
+                    console.log("Total Rows in Report (xyz): " + rownum);
+                    txt = "<table border='1' style='font-size:16px; width:1050px;'>";
+                    txt = txt + "<tr >";
+                    txt = txt + "<td class='cellborder'>##</td>";
+                    txt = txt + "<td class='cellborder'>Ticket No</td>";
+                    txt = txt + "<td class='cellborder'>Create Date</td>";
+                    txt = txt + "<td class='cellborder'>User Name</td>";
+                    txt = txt + "<td class='cellborder'>Agent Parent Map</td>";
+                    txt = txt + "<td class='cellborder'>Bet</td>";
+                    txt = txt + "<td class='cellborder cellright' >Price</td>";
+                    txt = txt + "<td class='cellborder cellright' >Discount Price</td>";
+                    txt = txt + "<td class='cellborder cellright' >Win Money</td>";
+                    txt = txt + "<td class='cellborder cellright' >Is Win</td>";
+                    txt = txt + "</tr>";
+
+                    for (let i = 0; i < rownum; i++) {
+                        txt = txt + "<tr >";
+                        txt = txt + "<td class='cellborder'>" + (i + 1) + "</td>";
+                        txt = txt + "<td class='celldata'>" + mylist[i].CurrentPeriod + "</td>";
+                        txt = txt + "<td class='celldata'>" + mylist[i].CreateDate + "</td>";
+                        txt = txt + "<td class='celldata'>" + mylist[i].UserName + "</td>";
+                        txt = txt + "<td class='celldata'>" + mylist[i].AgentParentMap + "</td>";
+                        txt = txt + "<td class='celldata'>" + mylist[i].FamilyBigID + " " + mylist[i].SelectedNums + "</td>";
+                        txt = txt + "<td class='celldata cellright' >" + Number(mylist[i].Price).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellright' >" + Number(mylist[i].DiscountPrice).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellright' >" + Number(mylist[i].WinMoney).toFixed(4) + "</td>";
+                        txt = txt + "<td class='celldata cellright' >" + mylist[i].IsWin + "</td>";
+                        txt = txt + "</tr>";
+                    }
+
+                    txt = txt + "</table>";
+
+                    console.log(txt);
+
+                    document.getElementById("Report2").innerHTML = txt;
+                    console.log("Report 2 done");
+
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+
+            document.getElementById("Report2").style = "display: block; border-style: solid; border-width: 3px; border-color: green; border-radius: 3px; width: 1150px;";
+            document.getElementById("pop2").style = "display: block; ";
+            document.getElementById("closebutt2").style = "display: block; text-align: right;";
+            document.getElementById("excelbutton2").style = "display: block; width: 35px; height: 35px; position: absolute; top: 40px; left: 54px;";
+            document.getElementById("pop2").className = "Report2";
+            console.log(document.getElementById("Report2").style);
+            document.getElementById("ReportJSON2").innerText = "";
+            document.getElementById("ReportJSON2").style = "display: none";
+        }
+    </script>
+
+    <script>
+        function FormatNumber() {
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                url: "http://localhost:8066/API/GetCommaNumber",
+                data: JSON.stringify({ "InputText": $("#txtnumber").val() }),
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    console.log(response);
+                    var myformatnum = JSON.parse(response);
+                    $("#txtformatnumber").val(myformatnum[0].InputText);
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+        }
+    </script>
+
+
+    <div id="mainDiv" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center;">
+                <span style="font-size:38px;font-weight: bolder;color: blue;">testaccount.html</span><br><br>
+                <label>inputText Parameter</label><br>
+                <input type="date" id="dtDateS" /><br>
+                <input type="date" id="dtDateE" /><br>
+                <label>Selected User Name:</label><input type="text" id="txtUserName" value="b_B77AAAC20WU" placeholder="HL_B77ACAA07KD" /><br />
+                <button onclick="Go()">Go</button>
+                <button onclick="GenExcel()">Generate Excel</button>
+
+                <a id="downloadlink" href="" target="_blank" style="display:none;">Click to Download</a>
+                <button onclick="ShowJSON()">Show JSON</button><br />
+                <input type="text" id="txtnumber" value="1450.21" />
+                <input type="text" id="txtformatnumber" value="" />
+                <button onclick="FormatNumber()">Format</button>
+            </div>
+        </div>
+
+
+        <div class="row roundBorder" id="pop01" style="display:none;">
+            <div class="col-md-3 col-sm-3 scrollable" style="padding-right:80px;" id="div_result">
+            </div>
+            <div id="curPeriods" class="col-md-8 col-sm-8 scrollable2" style="border-color:red;border-style:solid;border-width:3px;">
+            </div>
+            <div class="col-md-1 col-sm-1" style="border-style: solid; border-width: 1px; padding-right: 60px;" id="closebutt">
+                <button style="font-size:24px; float:right;" onclick="closePop()"><i class="fa fa-close"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="Report">
+    </div>
+    <br />
+    <div id="ReportJSON"></div>
+
+    <div id="pop2" class="container-fluid">
+        <div class="row">
+            <div id="Report2" class="col-md-11 col-sm-11">
+            </div>
+            <div class="col-md-1 col-sm-1" style="border-style: solid; border-width: 1px; padding-right: 5px; text-align:right; display: none;" id="closebutt2">
+                <button id="closebutton2" style="font-size:24px; float:right;" onclick="closePop2()"><i class="fa fa-close"></i></button>
+                <button id="excelbutton2" style="width: 25px; height: 25px; display: none;" onclick='closePop2()'><img src='/excel.jpg' style="width: 25px; height: 25px;" /></button><br />
+                
+            </div>
+        </div>
+    </div>
+    <br />
+    <div id="ReportJSON2"></div>
+    
+</body>
+</html>

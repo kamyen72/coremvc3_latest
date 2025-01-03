@@ -1,0 +1,1185 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CoreMVC3.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CoreMVC3.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportBetDetails_2024-06-07-11-53-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportBetDetails_2024-06-07-11-53-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportBetDetails_2024-06-07-13-28-38.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportBetDetails_2024-06-07-13-28-38.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-04-08.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-04-08.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-05-03.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-05-03.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-07-30.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-07-30.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-14-58.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-14-58.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-42-47.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-42-47.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-45-46.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-16-45-46.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-09-39.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-09-39.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-11-25.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-11-25.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-12-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-12-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-16-58.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-16-58.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-19-33.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-19-33.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-23-37.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-23-37.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-27-42.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-27-42.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-30-05.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-30-05.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-31-07.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-31-07.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-34-16.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-34-16.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-36-08.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-36-08.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-41-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-41-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-49-53.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-49-53.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-57-01.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-57-01.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-58-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-17-58-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-01-57.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-01-57.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-04-02.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-04-02.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-11-07.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-11-07.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-12-39.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-12-39.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-14-39.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-14-39.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-18-25.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-18-25.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-21-57.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-21-57.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-24-25.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-24-25.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-27-43.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-27-43.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-29-38.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-29-38.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-33-38.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReportByGame_2024-05-31-18-33-38.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-12-58-20.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-12-58-20.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-12-59-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-12-59-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-01-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-01-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-03-28.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-03-28.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-04-55.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-04-55.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-05-57.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-05-57.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-12-50.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-12-50.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-23-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-23-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-26-15.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-26-15.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-33-48.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-33-48.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-41-51.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-41-51.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-43-08.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-43-08.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-45-37.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-45-37.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-47-34.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-47-34.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-58-47.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-17-13-58-47.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-18-10-40-23.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-18-10-40-23.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-18-10-41-50.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-18-10-41-50.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-18-10-44-13.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-06-18-10-44-13.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-03-21-44-30.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-03-21-44-30.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-03-21-53-06.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-03-21-53-06.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-03-21-57-41.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-03-21-57-41.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-04-00-48-10.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-04-00-48-10.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-19-17-20-35.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-19-17-20-35.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-07-59-43.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-07-59-43.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-08-00-45.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-08-00-45.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-08-02-01.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-08-02-01.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-08-21-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-20-08-21-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-00-45.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-00-45.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-01-43.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-01-43.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-02-04.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-02-04.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-04-27.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-04-27.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-05-09.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-05-09.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-06-46.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-08-21-17-06-46.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-36-53.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-36-53.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-39-00.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-39-00.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-43-04.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-43-04.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-44-19.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-44-19.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-46-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-46-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-51-08.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-51-08.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-51-39.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-51-39.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-52-08.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-52-08.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-53-35.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-53-35.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-56-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-09-18-20-56-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L1_2024-10-01-14-17-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L1_2024-10-01-14-17-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-06-18-16-07-38.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-06-18-16-07-38.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-06-18-16-11-29.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-06-18-16-11-29.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-06-19-14-14-10.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-06-19-14-14-10.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-03-21-44-37.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-03-21-44-37.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-19-17-13-07.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-19-17-13-07.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-20-16-44-59.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-20-16-44-59.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-20-16-48-16.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-20-16-48-16.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-25-02-10-06.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-08-25-02-10-06.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-49-32.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-49-32.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-52-06.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-52-06.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-56-51.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-56-51.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-57-01.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-57-01.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-58-11.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-58-11.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-58-46.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-58-46.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-59-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-21-59-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-22-02-07.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-18-22-02-07.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-19-00-49-13.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-19-00-49-13.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-28-14-52-18.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-28-14-52-18.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-15-11-23.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-15-11-23.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-16-07-52.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-16-07-52.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-16-18-58.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-16-18-58.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-17-04-31.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-17-04-31.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-17-09-42.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-17-09-42.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-17-12-10.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-09-30-17-12-10.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-09-24-50.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-09-24-50.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-09-44-23.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-09-44-23.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-09-54-19.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-09-54-19.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-35-12.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-35-12.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-45-26.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-45-26.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-51-36.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-51-36.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-58-28.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-10-58-28.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-04-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-04-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-12-35.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-12-35.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-15-13.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-15-13.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-16-53.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-16-53.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-19-14.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-19-14.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-28-52.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-28-52.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-34-24.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-34-24.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-53-53.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-11-53-53.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-06-09.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-06-09.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-17-17.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-17-17.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-20-20.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-20-20.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-51-25.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-12-51-25.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-03-28.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-03-28.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-08-59.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-08-59.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-16-53.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-16-53.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-29-48.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-29-48.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-47-13.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-13-47-13.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-01-40.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-01-40.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-09-23.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-09-23.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-20-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-20-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-25-42.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-25-42.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-43-55.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-43-55.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-46-52.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-46-52.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-49-39.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-14-49-39.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-33-52.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-33-52.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-36-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-36-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-39-09.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-39-09.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-51-37.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-51-37.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-59-01.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-17-59-01.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-18-04-22.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-01-18-04-22.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-09-54-15.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-09-54-15.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-21-37.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-21-37.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-30-51.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-30-51.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-40-48.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-40-48.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-42-30.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-42-30.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-47-57.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-47-57.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-54-29.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-10-54-29.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-05-17.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-05-17.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-13-02.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-13-02.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-18-52.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-18-52.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-20-17.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-20-17.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-22-12.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-02-11-22-12.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-07-21-38-32.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-07-21-38-32.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-07-21-49-34.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-07-21-49-34.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-09-16-11-04.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-09-16-11-04.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-31-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-31-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-39-12.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-39-12.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-42-00.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-42-00.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-16-59-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-16-59-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-17-09-55.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-17-09-55.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-42-40.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-42-40.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-43-48.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-43-48.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-45-35.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-45-35.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-52-34.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-52-34.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-53-57.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-53-57.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-56-58.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-56-58.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-58-58.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-21-58-58.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-22-02-41.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-22-02-41.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-22-06-15.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-18-22-06-15.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-19-12-29-40.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-19-12-29-40.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-08-21-12-27-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-08-21-12-27-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-08-21-12-52-40.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-08-21-12-52-40.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-16-36.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-16-36.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-20-02.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-20-02.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-44-27.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-44-27.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-44-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-44-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-45-31.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-18-21-45-31.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-19-00-50-19.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L3_2024-09-19-00-50-19.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-06-19-15-45-00.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-06-19-15-45-00.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-03-21-59-31.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-03-21-59-31.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-03-23-43-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-03-23-43-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-03-23-46-42.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-03-23-46-42.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-04-00-48-39.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-04-00-48-39.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-05-19-05-56.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-05-19-05-56.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-06-00-34-01.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-06-00-34-01.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-10-13-12-13.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-10-13-12-13.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-12-14.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-12-14.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-16-20.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-16-20.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-18-15.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-18-15.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-19-22.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-19-22.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-19-47.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-19-47.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-20-12.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-20-12.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-21-47.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-21-47.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-23-02.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-23-02.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-23-37.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-23-37.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-24-03.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-24-03.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-24-30.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-24-30.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-24-54.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-11-11-24-54.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-21-12-29-21.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-21-12-29-21.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-21-12-30-05.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-21-12-30-05.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-21-13-24-53.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-08-21-13-24-53.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-09-18-21-41-49.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-09-18-21-41-49.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L4_2024-09-19-00-56-03.xlsx",
+      "PackagePath": "staticwebassets\\ExcelFiles\\WinLoseReport_Overall_L4_2024-09-19-00-56-03.xlsx"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestBet.html",
+      "PackagePath": "staticwebassets\\TestBet.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestExcelOverallDrillL2.html",
+      "PackagePath": "staticwebassets\\TestExcelOverallDrillL2.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestExcelOverallDrillL3.html",
+      "PackagePath": "staticwebassets\\TestExcelOverallDrillL3.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestExcelOverallDrillL4.html",
+      "PackagePath": "staticwebassets\\TestExcelOverallDrillL4.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestOverallByUserName.html",
+      "PackagePath": "staticwebassets\\TestOverallByUserName.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestOverallL4Drill.html",
+      "PackagePath": "staticwebassets\\TestOverallL4Drill.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestOverallWith3Params.html",
+      "PackagePath": "staticwebassets\\TestOverallWith3Params.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\TestReport.html",
+      "PackagePath": "staticwebassets\\TestReport.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\clean.png",
+      "PackagePath": "staticwebassets\\clean.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\clock.gif",
+      "PackagePath": "staticwebassets\\clock.gif"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\cross.png",
+      "PackagePath": "staticwebassets\\cross.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\default.html",
+      "PackagePath": "staticwebassets\\default.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\download.png",
+      "PackagePath": "staticwebassets\\download.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\excel.jpg",
+      "PackagePath": "staticwebassets\\excel.jpg"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\excel.png",
+      "PackagePath": "staticwebassets\\excel.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\plus.png",
+      "PackagePath": "staticwebassets\\plus.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\prev.png",
+      "PackagePath": "staticwebassets\\prev.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\red_binoculous.png",
+      "PackagePath": "staticwebassets\\red_binoculous.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\red_download.jpg",
+      "PackagePath": "staticwebassets\\red_download.jpg"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\red_download.png",
+      "PackagePath": "staticwebassets\\red_download.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\report.png",
+      "PackagePath": "staticwebassets\\report.png"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\testBetType.html",
+      "PackagePath": "staticwebassets\\testBetType.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\testajax.html",
+      "PackagePath": "staticwebassets\\testajax.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\testjson.html",
+      "PackagePath": "staticwebassets\\testjson.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\testoverall.html",
+      "PackagePath": "staticwebassets\\testoverall.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\testoverallbybettype.html",
+      "PackagePath": "staticwebassets\\testoverallbybettype.html"
+    },
+    {
+      "Id": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\testprefix.html",
+      "PackagePath": "staticwebassets\\testprefix.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CoreMVC3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CoreMVC3.props",
+      "PackagePath": "build\\CoreMVC3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CoreMVC3.props",
+      "PackagePath": "buildMultiTargeting\\CoreMVC3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CoreMVC3.props",
+      "PackagePath": "buildTransitive\\CoreMVC3.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

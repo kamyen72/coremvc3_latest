@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To test ajax function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        .scrollable {
+            background-color: lightpink;
+            width: auto;
+            height: 500px;
+            overflow: scroll;
+            padding-left: 5px;
+        }
+
+        .scrollable2 {
+            background-color: lightgreen;
+            width: auto;
+            /*max-width:500px;*/
+            height: 500px;
+            overflow: scroll;
+            padding-left: 0px;
+        }
+
+        .pad50 {
+            padding-left: 50px;
+        }
+
+        .padright100 {
+            padding-right: 160px;
+        }
+
+        .roundBorder {
+            border-style: solid;
+            border-width: 5px;
+            border-color: grey;
+            border-radius: 15px;
+        }
+
+        .fa_custom {
+            color: #0099CC
+        }
+    </style>
+</head>
+<body style="background: lightblue;">
+    <script>
+        function anything() {
+            console.log("Test Me");
+            var StartDate = $("#dtDateS").val();
+            var EndDate = $("#dtDateE").val();
+            console.log(JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate }));
+            document.getElementById("pop01").style = "display:block; padding-left: 310px;";
+            document.getElementById("div_result").style = "display:block; padding-left: 50px; padding-right: 5px; width: 400px;";
+            document.getElementById("curPeriods").style = "display:block; padding-left: 5px; padding-right: 5px; width: 900px;";
+            document.getElementById("closebutt").style = "display:block; padding-left: 5px; padding-right: 5px; width: 100px;";
+
+            document.getElementById("div_result").className = "col-sm-3 col-md-3 scrollable";
+            document.getElementById("curPeriods").className = "col-sm-8 col-md-8 scrollable";
+            document.getElementById("closebutt").className = "col-sm-1 col-md-1";
+
+            document.getElementById("curPeriods").innerHTML = "";
+
+            $.ajax({
+                type: "POST",
+                url: "/API/GetAccountPrefixs",
+                data: JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    var rownum = response.length;
+                    txt = "<table width='300px' id='prefixtable'>";
+                    txt = txt + "<tr><td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;'>Acc Prefix</td><td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align: center;'>Recs</td></tr>";
+                    for (i = 0; i < rownum; i++) {
+                        txt = txt + "<tr>";
+                        txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue; text-align:left;'><button style='width:150px;' data-val='" + response[i].Prefix + "' onclick='DrillMe(this)'>" + response[i].Prefix + "</button></td>";
+                        txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue;text-align: center;'><button style='width:150px;' data-val='" + response[i].Prefix + "' onclick='DrillMe(this)'>" + response[i].Recs + "</button></td>";
+                        txt = txt + "</tr>";
+                    }
+                    txt = txt + "</table>";
+
+                    document.getElementById("div_result").innerHTML = txt;
+                    //document.getElementById("div_result").style.display = "block";
+                    //document.getElementById("curPeriods").style.display = "block";
+                    //document.getElementById("pop01").style = "display: block; background: lightgreen;";
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+
+            console.log("done");
+        }
+    </script>
+
+    <script>
+        function closePop() {
+            document.getElementById("div_result").style.display = "none";
+            document.getElementById("pop01").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function DrillMe(me) {
+            console.log("wait ah");
+            var id = $(me).attr("data-val");
+            alert(id);
+            var StartDate = $("#dtDateS").val();
+            var EndDate = $("#dtDateE").val();
+            document.getElementById("pop01").style = "display:block; padding-left: 310px;";
+            document.getElementById("div_result").style = "display:block; padding-left: 50px; padding-right: 5px; width: 400px;";
+            document.getElementById("curPeriods").style = "display:block; padding-left: 5px; padding-right: 5px; width: 900px;";
+            document.getElementById("closebutt").style = "display:block; padding-left: 5px; padding-right: 5px; width: 100px;"
+            //alert(id);
+            $.ajax({
+                type: "POST",
+                url: "/API/GetAccounts",
+                data: JSON.stringify({ "Prefix": id, "StartDate": StartDate, "EndDate": EndDate }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                success: function (response) {
+                    console.log("success");
+                    var rownum = response.length;
+                    txt = "<table border='1' style='width:800px;' id='resulttable'>";
+                    txt = txt + "<tr style='background:lightblue;'>"
+                    txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:center;'>##</td>"
+                    txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;width: 350px;'>Account</td>";
+                    //txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;width: auto;'>Bet Type</td>";
+                    txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:center;width: auto;'>Records</td>";
+                    txt = txt + "</tr>";
+
+                    var TotalCount = 0;
+
+                    for (i = 0; i < rownum; i++) {
+                        txt = txt + "<tr>";
+                        txt = txt + "<td style='text-align: center; border-style:solid; border-width:2px; border-color:blue; '>" + (i + 1) + "</td>";
+                        txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue; text-align:left;'><button onclick='TakeMe(this)' data-val='" + response[i].UserName + "' style='min-width:200px;height:30px;'>" + response[i].UserName + "</button>";
+                        txt = txt + "<button style='background: lightblue; width: 50px; height:30px; style='font-size: 20px;'><img src='/excel.jpg' style='width:25px;height:25px;' /> </button>";
+                        txt = txt + "<button style='background: lightblue; width: 50px; height:30px; style='font-size: 20px;'><img src='/report.png' style='width:25px;height:25px;' /> </button>";
+                        txt = txt + "</td>";
+
+                        //txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue; text-align:left;'><button onclick='TakeMe4(this)' data-val='" + response[i].BetType + "' style='min-width:auto;'>" + response[i].BetType + "</button></td>";
+                        txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue; text-align:center;'>" + response[i].Recs + "</td>";
+                        txt = txt + "</tr>";
+
+                        TotalCount = TotalCount + parseInt(response[i].Recs);
+
+                        console.log(parseInt(response[i].Recs));
+                    }
+
+                    txt = txt + "<tr style='background:lightblue;'>"
+                    txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;'></td>"
+                    txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;width: 250px;'></td>";
+                    //txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;width: auto;'></td>";
+                    txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:center;width: auto;'>" + TotalCount + "</td>";
+                    txt = txt + "</tr>";
+
+                    txt = txt + "</table>";
+                    //console.log(txt);
+
+                    document.getElementById("curPeriods").innerHTML = txt;
+                    document.getElementById("curPeriods").style.display = "block";
+                    document.getElementById("pop01").style.display = "block";
+                },
+                failure: function (response) {
+                    console.log("failure");
+                },
+                error: function (response, status) {
+                    console.log("error");
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function TakeMe(me) {
+            alert($(me).attr("data-val"));
+        }
+    </script>
+
+    <script>
+        function TakeMe4(me) {
+            alert($(me).attr("data-val"));
+        }
+    </script>
+
+
+    <div id="mainDiv" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center;">
+                <span style="font-size:38px;font-weight: bolder;color: blue;">testaccount.html</span><br><br>
+                <label>inputText Parameter</label><br>
+                <input type="date" id="dtDateS" /><br>
+                <input type="date" id="dtDateE" /><br>
+                <button onclick="anything()">Go</button>
+            </div>
+        </div>
+        <div class="row roundBorder" id="pop01" style="display:none;">
+            <div class="col-md-3 col-sm-3 scrollable" style="padding-right:80px;" id="div_result">
+            </div>
+            <div id="curPeriods" class="col-md-8 col-sm-8 scrollable2" style="border-color:red;border-style:solid;border-width:3px;">
+            </div>
+            <div class="col-md-1 col-sm-1" style="border-style: solid; border-width: 1px; padding-right: 60px;" id="closebutt">
+                <button style="font-size:24px; float:right;" onclick="closePop()"><i class="fa fa-close"></i></button>
+            </div>
+        </div>
+
+</body>
+</html>

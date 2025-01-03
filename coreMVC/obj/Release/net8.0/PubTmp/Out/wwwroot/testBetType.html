@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To test ajax function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .scrollable {
+            background-color: lightpink;
+            width: auto;
+            height: 500px;
+            overflow: scroll;
+            padding-left: 5px;
+        }
+
+        .scrollable2 {
+            background-color: lightgreen;
+            width: auto;
+            /*max-width:500px;*/
+            height: 500px;
+            overflow: scroll;
+            padding-left: 0px;
+        }
+
+        .pad50 {
+            padding-left: 50px;
+        }
+
+        .padright100 {
+            padding-right: 160px;
+        }
+
+        .roundBorder {
+            border-style: solid;
+            border-width: 5px;
+            border-color: grey;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body style="background: lightblue;">
+    <script>
+		function anything() {
+			console.log("Test Me");
+            var StartDate = $("#dtDateS").val();
+            var EndDate = $("#dtDateE").val();
+			console.log(JSON.stringify({"StartDate" : StartDate, "EndDate" : EndDate}));
+            document.getElementById("div_result").innerHTML = "";
+            document.getElementById("curPeriods").style.display = "none";
+
+            //var dtStart = document.getElementById("StartDate").value;
+            //var dtEnd = document.getElementById("EndDate").value;
+
+			$.ajax({
+                    type: "POST",
+                    url: "/API/GetBetTypes",
+                    data: JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    crossDomain:true,
+                    success: function (response) {
+						console.log("success");
+                        var rownum = response.length;
+                        txt = "<table width='auto'>";
+                        txt = txt + "<tr style='background: lightblue;'>";
+                        txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align:left;'>Bet Type</td>";
+                        txt = txt + "<td style='font-weight:bolder;border-style:solid; border-width:2px; border-color:blue; text-align: center;'>Recs</td>";
+                        txt = txt + "</tr>";
+                        for (i = 0; i < rownum; i++) {
+                            if (i == 0) {
+                                
+                            }
+
+                            txt = txt + "<tr>";
+                            txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue; text-align:left;'><button style='min-width:300px;' data-val='" + response[i].BetType + "' onclick='DrillMe(this)'>" + response[i].BetType + "</button></td>";
+                            txt = txt + "<td style='border-style:solid; border-width:2px; border-color:blue;text-align: center;'><button style='min-width:50px;' data-val='" + response[i].BetType + "' onclick='DrillMe(this)'>" + response[i].Recs + "</button></td>";
+                            txt = txt + "</tr>";
+                        }
+                        txt = txt + "</table>";
+
+                        document.getElementById("div_result").innerHTML = txt;
+                        document.getElementById("div_result").style.display = "block";
+                        document.getElementById("pop01").style.display = "block";
+                    },
+                    failure: function (response) {
+                        console.log("failure");
+                    },
+                    error: function (response, status) {
+                        console.log("error");
+                    }
+            });
+
+			console.log("done");
+		}
+    </script>
+
+    <script>
+        function closePop() {
+            document.getElementById("div_result").style.display = "none";
+            document.getElementById("pop01").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function DrillMe(me) {
+            var id = $(me).attr("data-val");
+            var StartDate = $("#dtDateS").val();
+            var EndDate = $("#dtDateE").val();
+            document.getElementById("curPeriods").style.display = "none";
+            alert(id);
+        }
+    </script>
+
+    <script>
+        function TakeMe(me) {
+            alert($(me).attr("data-val"));
+        }
+    </script>
+
+    <div id="mainDiv" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center;">
+                <span style="font-size:28px;font-weight: bolder;color: purple;">testBetType.html</span><br><br>
+                <label>inputText Parameter</label><br>
+                <input type="date" id="dtDateS" /><br>
+                <input type="date" id="dtDateE" /><br>
+                <button onclick="anything()">Go</button>
+            </div>
+        </div>
+        <div class="row roundBorder" id="pop01" style="display:none;">
+            <div class="col-md-3 col-sm-3" style="padding-right:80px;">
+                <div class="col-sm-12 scrollable" id="div_result" style="text-align: center;font-size: 14px; display: none;">
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 " style="text-align:left;">
+                <div class="row">
+                    <div id="curPeriods" class="col-md-11 scrollable2" style="border-color:red;border-style:solid;border-width:3px;">
+                    </div>
+                    <div class="col-md-1 col-sm-1" style="border-style: solid; border-width: 1px; padding-right: 60px;">
+                        <button style="font-size:24px; float:right;" onclick="closePop()"><i class="fa fa-close"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+</html>

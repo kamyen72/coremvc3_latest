@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To test ajax function</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .scrollable {
+            background-color: lightpink;
+            width: 1200px;
+            height: 800px;
+            overflow: scroll;
+            padding-left: 5px;
+        }
+
+        .scrollable2 {
+            background-color: lightgreen;
+            width: auto;
+            /*max-width:500px;*/
+            height: 500px;
+            overflow: scroll;
+            padding-left: 0px;
+        }
+
+        .pad50 {
+            padding-left: 50px;
+        }
+
+        .padright100 {
+            padding-right: 160px;
+        }
+
+        .roundBorder {
+            border-style: solid;
+            border-width: 5px;
+            border-color: grey;
+            border-radius: 15px;
+        }
+
+        .fa_custom {
+            color: #0099CC
+        }
+
+        .cellborder {
+            font-weight: bolder;
+            font-size: 12px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            background: #99ffff;
+            color: #000000;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .celldata {
+            font-size: 12px;
+            font-weight: normal;
+            color: black;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            background: #ffffff;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .cellcenter {
+            text-align: center;
+        }
+
+        .cellright {
+            text-align: right;
+        }
+
+        .cellleft {
+            text-align: left;
+        }
+
+        .bckPink {
+            background: #f863ba;
+            border-style: none;
+            min-width: 150px;
+        }
+
+        .bckPeal {
+            background: #99ffff;
+            border-style: none;
+            min-width: 150px;
+        }
+
+        .Report2 {
+            background: #ffffff;
+            border-style: solid;
+            border-width: 4px;
+            border-radius: 5px;
+            border-color: darkgreen;
+            min-width: 850px;
+        }
+
+        #pop2 {
+            background: #ffffff;
+            border-style: solid;
+            border-width: 4px;
+            border-radius: 5px;
+            border-color: dimgrey;
+            min-width: 1250px;
+            z-index: 9999;
+            text-align: center;
+            position: absolute;
+            left: 340px;
+            top: 226px;
+            min-height: 600px;
+            overflow: scroll;
+            display: none;
+        }
+
+        .isnegative {
+            color: red;
+            background: #99ffff;
+            font-weight: bolder;
+            font-size: 12px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .negativecell {
+            font-size: 12px;
+            font-weight: normal;
+            color: red;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            background: #ffffff;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    </style>
+
+    
+
+    
+</head>
+
+<body style="background: lightblue;">
+    <div id="mainDiv" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style="text-align: center;">
+                <span style="font-size:28px;font-weight: bolder;color: purple;">testoverall.html</span><br><br>
+                <label>inputText Parameter</label><br>
+                <input type="date" id="dtDateS" /><br>
+                <input type="date" id="dtDateE" /><br>
+                <button onclick="anything()">Go</button>
+                <br />
+
+                <label>Your Number</label><input type="text" value="" id="mynum" /><br />
+                <label>Format Number</label><input type="text" value="" id="formatnum" /><br />
+                <button onclick="TestNum()">Test Number Format</button>
+            </div>
+        </div>
+        <div class="row roundBorder" id="pop01" style="display:none;">
+            <div class="col-sm-12 scrollable" id="div_result" style="text-align: center;font-size: 14px; display: none;">
+            </div>
+        </div>
+        <hr />
+        <div id="jsondata" style="display:none;"></div>
+</body>
+
+<script>
+    function TestNum() {
+        document.getElementById("formatnum").value = formatcomma(document.getElementById("mynum").value);
+    }
+</script>
+
+<script>
+    function formatcomma(mynum) {
+        var numstr = mynum.toString();
+
+        var negfactor = -1;
+        var isnegative = numstr.indexOf("-");
+        if (isnegative == -1) {
+            negfactor = 1;
+        }
+        numstr = numstr.replaceAll("-", "");
+
+        var numlen = numstr.length;
+        numstr = numstr.replaceAll(" ", "");
+        var decimalpoint = numstr.indexOf(".");
+        if (decimalpoint == -1) {
+            numstr = numstr + ".00";
+            decimalpoint = numstr.indexOf(".");
+        }
+        console.log("Do I have decimal points? " + decimalpoint);
+
+        
+        numlen = numstr.length;
+        //decimalpoint = numstr.indexOf(".");
+
+        var newstr = "";
+        var decstr = numstr.substr(decimalpoint, numlen);
+        var intpart = numstr.substr(0, decimalpoint);
+
+        console.log(intpart);
+
+        var balstr = "";
+        var outstr = "";
+        var threelen = 0;
+        var outstr = ""
+        var tail = "";
+        var head = "";
+        var oritail = "";
+        var ballen = 0;
+        var headlen = 0;
+        var demostr = "";
+
+        
+        oritail = tail;
+        outstr = head + "--" + oritail;
+        balstr = head;
+
+        console.log("decimal point: " + decimalpoint);
+        console.log("int part: " + intpart);
+
+        for (let i = 0; i < 20; i++) {
+            if (decimalpoint == -1) {
+                console.log("am here ...");
+                oritail = numstr;
+                break;
+            }
+            else if (decimalpoint != -1 && intpart.length <= 3) {
+                console.log("small number ...");
+                oritail = numstr;
+                break;
+            }
+            else if (decimalpoint != -1 && intpart.length > 3) {
+                decimalpoint = numlen;
+            }
+
+            if (i == 0) {
+                //head = numstr.substr(0, decimalpoint);
+                head = intpart;
+                tail = decstr;
+                balstr = head;
+                oritail = numstr.substr(decimalpoint, numlen);
+                demostr = "[" + head + "][" + tail + "][" + oritail + "]"
+                console.log(i + ": " + demostr);
+                ballen = balstr.length;
+                console.log(i + ": ballen = " + ballen);
+            }
+            else if (i == 0 && numstr.length <= 3) {
+                oritail = intpart + decstr;
+                break;
+            }
+
+            else {
+                console.log(i + ": balstr: " + balstr + " + " + oritail);
+                headlen = balstr.length - 3;
+                ballen = 3;
+                numlen = balstr.length;
+
+                if (headlen >= 3) {
+                    head = balstr.substr(0, headlen);
+                    tail = balstr.substr(headlen, numlen); // cheah modi here
+                    oritail = padfront(",", tail) + oritail;
+                    balstr = head;
+                }
+
+                else if (headlen < 3 && headlen != 0) {
+                    console.log("at" + i + ", The headlen is only: " + headlen);
+                    head = balstr.substr(0, headlen);
+                    tail = balstr.substr(headlen, numlen);
+                    demostr = "[" + head + "][" + tail + "][" + oritail + "]"
+                    console.log(demostr);
+                    oritail = head + padfront(",", tail) + oritail;
+                    break;
+                }
+
+                else {
+                    console.log("at" + i + ", The headlen is only: " + headlen);
+                    head = balstr.substr(0, headlen);
+                    tail = balstr.substr(headlen, numlen);
+                    demostr = "[" + head + "][" + tail + "][" + oritail + "]"
+                    console.log(demostr);
+                    oritail = head + tail + oritail;
+                    break;
+                }
+                
+                //demostr = "[" + head + "][" + tail + "][" + oritail + "]"
+                
+
+                //if (head == "" || head == null) {
+                //    oritail = "" + tail + oritail;
+                //    console.log("no more head");
+                //}
+                console.log(i + "New Head: " + head);
+                console.log(i + "New Tail: " + tail);
+                console.log(i + "New Oritail: " + oritail);
+                
+            }
+        }
+
+        console.log("Before I return: " + oritail);
+
+        if (oritail.indexOf(".") != -1) {
+            outstr = oritail;
+        }
+        else {
+            outstr = oritail + decstr;
+        }
+
+        if (negfactor == -1) {
+            outstr = "-" + outstr;
+        }
+
+
+        return outstr;
+    }
+</script>
+
+<script>
+    function padfront(_new, me) {
+        var outstr = _new + me;
+        return outstr;
+    }
+</script>
+
+<script>
+    function anything() {
+        console.log("Test Me");
+        var StartDate = $("#dtDateS").val() + " 00:00:00";
+        var EndDate = $("#dtDateE").val() + " 23:59:59";
+        console.log(JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate }));
+
+        $.ajax({
+            type: "POST",
+            url: "/API/GetOverallReport",
+            data: JSON.stringify({ "StartDate": StartDate, "EndDate": EndDate }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            crossDomain: true,
+            success: function (response) {
+                console.log("success");
+                //console.log(response);
+                document.getElementById("jsondata").innerText = JSON.stringify(response);
+
+                var mydata = JSON.parse(document.getElementById("jsondata").innerText);
+
+                var myrows = mydata.length;
+
+                console.log(myrows);
+
+                var TotalTOver = 0;
+                var TotalPending = 0;
+                var TotalMemberWL = 0;
+                var TotalAgentWL = 0;
+                var TotalComWL = 0;
+                var TotalMAWL = 0;
+                var TotalSMWL = 0;
+
+                var txt = "<table>";
+                txt = txt + "<tr>";
+                txt = txt + "<td class='cellborder cellleft'>Bet Type</td>";
+                txt = txt + "<td class='cellborder cellright'>Turn Over</td>";
+                txt = txt + "<td class='cellborder cellright'>Pending</td>";
+                txt = txt + "<td class='cellborder cellright'>Member W/L</td>";
+                txt = txt + "<td class='cellborder cellright'>Agent W/L</td>";
+                txt = txt + "<td class='cellborder cellright'>Com W/L</td>";
+                txt = txt + "<td class='cellborder cellright'>MA W/L</td>";
+                txt = txt + "<td class='cellborder cellright'>SM W/L</td>";
+                txt = txt + "</tr>";
+                for (let i = 0; i < myrows; i++) {
+                    txt = txt + "<tr>";
+                    txt = txt + "<td class='celldata cellleft'>" + mydata[i].BetType + "</td>";
+                    txt = txt + "<td class='celldata cellright'>" + formatcomma( Number(mydata[i].TOver).toFixed(4))  + "</td>";
+                    txt = txt + "<td class='celldata cellright'>" + formatcomma(Number(mydata[i].Pending).toFixed(4))  + "</td>";
+                    if (Number(mydata[i].MemberWinLose) < 0) {
+                        txt = txt + "<td class='negativecell cellright'>" + formatcomma(Number(mydata[i].MemberWinLose).toFixed(4)) + "</td>";
+                    }
+                    else {
+                        txt = txt + "<td class='celldata cellright'>" + formatcomma(Number(mydata[i].MemberWinLose).toFixed(4)) + "</td>";
+                    }
+
+                    if (Number(mydata[i].AgentWinLose) >= 0) {
+                        txt = txt + "<td class='celldata cellright'>" + formatcomma( Number(mydata[i].AgentWinLose).toFixed(4) ) + "</td>";
+                    }
+                    else {
+                        txt = txt + "<td class='negativecell cellright'>" + formatcomma( Number(mydata[i].AgentWinLose).toFixed(4) ) + "</td>";
+                    }
+
+                    if (Number(mydata[i].ComWinLose) >= 0) {
+                        txt = txt + "<td class='celldata cellright'>" + formatcomma( Number(mydata[i].ComWinLose).toFixed(4) ) + "</td>";
+                    }
+                    else {
+                        txt = txt + "<td class='negativecell cellright'>" + formatcomma( Number(mydata[i].ComWinLose).toFixed(4) ) + "</td>";
+                    }
+                    txt = txt + "<td class='celldata cellright'>" + formatcomma( Number(mydata[i].MAWinLose).toFixed(4) ) + "</td>";
+                    txt = txt + "<td class='celldata cellright'>" + formatcomma( Number(mydata[i].SMWinLose).toFixed(4) ) + "</td>";
+                    txt = txt + "</tr>";
+
+                    TotalTOver = TotalTOver + Number(mydata[i].TOver.toString());
+                    TotalPending = TotalPending + Number(mydata[i].Pending.toString());
+                    TotalMemberWL = TotalMemberWL + Number(mydata[i].MemberWinLose.toString());
+                    TotalAgentWL = TotalAgentWL + Number(mydata[i].AgentWinLose.toString());
+                    TotalComWL = TotalComWL + Number(mydata[i].ComWinLose.toString());
+                    TotalMAWL = TotalMAWL + Number(mydata[i].MAWinLose.toString());
+                    TotalSMWL = TotalSMWL + Number(mydata[i].SMWinLose.toString());
+                }
+                //txt = txt + "<tr>";
+                //txt = txt + "<td class='cellborder'></td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalTOver.toFixed(4) + "</td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalPending.toFixed(4) + "</td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalMemberWL.toFixed(4) + "</td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalAgentWL.toFixed(4) + "</td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalComWL.toFixed(4) + "</td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalMAWL.toFixed(4) + "</td>";
+                //txt = txt + "<td class='cellborder cellright'>" + TotalSMWL.toFixed(4) + "</td>";
+                //txt = txt + "</tr>";
+
+                txt = txt + "<tr>";
+                txt = txt + "<td class='cellborder'></td>";
+                txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalTOver.toFixed(4)) + "</td>";
+                txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalPending.toFixed(4)) + "</td>";
+
+                if (TotalMemberWL < 0) {
+                    txt = txt + "<td class='isnegative cellright'>" + formatcomma(TotalMemberWL.toFixed(4)) + "</td>";
+                }
+                else {
+                    txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalMemberWL.toFixed(4)) + "</td>";
+                }
+                
+                txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalAgentWL.toFixed(4)) + "</td>";
+                txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalComWL.toFixed(4)) + "</td>";
+                txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalMAWL.toFixed(4)) + "</td>";
+                txt = txt + "<td class='cellborder cellright'>" + formatcomma(TotalSMWL.toFixed(4)) + "</td>";
+                txt = txt + "</tr>";
+
+
+                //document.getElementById("jsondata").style.display = "block";
+                document.getElementById("pop01").style.display = "block";
+                document.getElementById("div_result").innerHTML = txt;
+                document.getElementById("div_result").style.display = "block";
+            },
+            failure: function (response) {
+                console.log("failure");
+            },
+            error: function (response, status) {
+                console.log("error");
+            }
+        });
+
+        console.log("done");
+    }
+</script>
+</html>

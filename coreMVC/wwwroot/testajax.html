@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>To test ajax function</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body style="background: #00ffff">
+	<div id="mainDiv" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12" style="text-align: center;">
+				<label>inputText Parameter</label><br>
+ 				<input type="text" id="inputText" value="abc" /><br>
+ 				<button onclick="TestMe()">Go</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" id="div_result" style="text-align: center;font-size: 26px;">
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+        function TestMe() {
+            var myText = $("#inputText").val();
+
+            alert(myText);
+
+			$.ajax({
+                    type: "POST",
+                    url: "/API/AjaxMethod",
+                    data: JSON.stringify({ "inputText": myText }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+                        alert(response.ReturnText);
+                        $("#div_result").html(response.ReturnText);
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    },
+                    error: function (response, status) {
+                        alert(status);
+                        $("#div_result").html("<span style='color:red;'>Error: </span>" + response.responseText);
+                    }
+                });
+
+			alert("done");
+		}
+	</script>
+</body>
+</html>

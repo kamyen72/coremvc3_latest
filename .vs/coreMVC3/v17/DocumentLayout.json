@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\source_codes\\coreMVC3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|d:\\source_codes\\coremvc3\\coremvc\\controllers\\betcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|solutionrelative:coremvc\\controllers\\betcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|d:\\source_codes\\coremvc3\\coremvc\\classes\\dbutil2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|solutionrelative:coremvc\\classes\\dbutil2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|d:\\source_codes\\coremvc3\\coremvc\\classes\\dbs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|solutionrelative:coremvc\\classes\\dbs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|d:\\source_codes\\coremvc3\\coremvc\\classes\\db_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|solutionrelative:coremvc\\classes\\db_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|d:\\source_codes\\coremvc3\\coremvc\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3767A47-5E53-43C9-949D-3D404D80D85A}|CoreMVC\\CoreMVC3.csproj|solutionrelative:coremvc\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBUtil2.cs",
+              "DocumentMoniker": "D:\\source_codes\\coreMVC3\\coreMVC\\Classes\\DBUtil2.cs",
+              "RelativeDocumentMoniker": "coreMVC\\Classes\\DBUtil2.cs",
+              "ToolTip": "D:\\source_codes\\coreMVC3\\coreMVC\\Classes\\DBUtil2.cs",
+              "RelativeToolTip": "coreMVC\\Classes\\DBUtil2.cs",
+              "ViewState": "AQIAAP4DAAAAAAAAAIAwwBQEAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:08:32.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "APIController.cs",
+              "DocumentMoniker": "D:\\source_codes\\coreMVC3\\coreMVC\\Controllers\\APIController.cs",
+              "RelativeDocumentMoniker": "coreMVC\\Controllers\\APIController.cs",
+              "ToolTip": "D:\\source_codes\\coreMVC3\\coreMVC\\Controllers\\APIController.cs",
+              "RelativeToolTip": "coreMVC\\Controllers\\APIController.cs",
+              "ViewState": "AQIAAEkJAAAAAAAAAADgv48JAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:00:46.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "db_report.cs",
+              "DocumentMoniker": "D:\\source_codes\\coreMVC3\\coreMVC\\Classes\\db_report.cs",
+              "RelativeDocumentMoniker": "coreMVC\\Classes\\db_report.cs",
+              "ToolTip": "D:\\source_codes\\coreMVC3\\coreMVC\\Classes\\db_report.cs",
+              "RelativeToolTip": "coreMVC\\Classes\\db_report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:36:43.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DBs.cs",
+              "DocumentMoniker": "D:\\source_codes\\coreMVC3\\coreMVC\\Classes\\DBs.cs",
+              "RelativeDocumentMoniker": "coreMVC\\Classes\\DBs.cs",
+              "ToolTip": "D:\\source_codes\\coreMVC3\\coreMVC\\Classes\\DBs.cs",
+              "RelativeToolTip": "coreMVC\\Classes\\DBs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:36:33.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BetController.cs",
+              "DocumentMoniker": "D:\\source_codes\\coreMVC3\\coreMVC\\Controllers\\BetController.cs",
+              "RelativeDocumentMoniker": "coreMVC\\Controllers\\BetController.cs",
+              "ToolTip": "D:\\source_codes\\coreMVC3\\coreMVC\\Controllers\\BetController.cs",
+              "RelativeToolTip": "coreMVC\\Controllers\\BetController.cs",
+              "ViewState": "AQIAAHoCAAAAAAAAAIAwwJACAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:34:10.124Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
